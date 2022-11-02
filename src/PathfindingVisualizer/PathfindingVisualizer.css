@@ -1,0 +1,125 @@
+.grid{
+    margin: 20px 0 0;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.nav-text{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-left: 40px; 
+    list-style:none;
+}
+
+li{
+    list-style: none;
+    margin: 0;
+    padding: 36px 0 36px 32px;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.li-start{ 
+    background-image: url(C:\Users\Jayden\pathfinder\src\img\startnode.PNG);
+} 
+
+.li-target{ 
+    background-image: url(C:\Users\Jayden\pathfinder\src\img\targetnode.PNG);
+}
+
+.li-wall{ 
+    background-image: url(C:\Users\Jayden\pathfinder\src\img\wallnode.PNG);
+}
+
+.li-visited{ 
+    background-image: url(C:\Users\Jayden\pathfinder\src\img\visitednode.PNG);
+} 
+
+.li-shortest{ 
+    background-image: url(C:\Users\Jayden\pathfinder\src\img\shortestpathnode.PNG);
+} 
+
+.li-unvisited{ 
+    background-image: url(C:\Users\Jayden\pathfinder\src\img\unvisitednode.PNG);
+} 
+
+.button{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+    border: 2px solid rgb(12, 53, 71);
+    padding:2px 12px;
+    font-size: 12.5px;
+    font-weight: 550;
+   /* background: transparent; */
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
+.hero-btn:hover{
+    border:1px solid #2ec4b6;
+    background: #2ec4b6;
+    color: #fff;
+    transition: .75s;
+}
+
+.popup{
+    position: absolute;
+    top: 25%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background: #ffff88;
+    width: 250px;
+    height: 120px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.close-btn{
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close{
+    visibility: hidden;
+}
+
+
